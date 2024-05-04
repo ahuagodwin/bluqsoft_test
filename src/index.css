@@ -1,6 +1,3 @@
-
-
-
 :root {
   --app-theme: #f4f4f4;
   --app-white: #fff;
@@ -13,19 +10,19 @@
 
 
 * {
-padding: 0rem;
-margin: 0rem;
-scroll-behavior: smooth;
-box-sizing: border-box;
-scroll-snap-type: both mandatory;
-scrollbar-width: none;
+  padding: 0rem;
+  margin: 0rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-snap-type: both mandatory;
+  scrollbar-width: none;
 }
 
 body {
-background: var(--app-theme);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  background: var(--app-theme);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -39,20 +36,20 @@ background-size: cover;
 
 /* CONTAINER */
 .container {
-width: 100%;
-padding: 20px;
-margin-right: auto;
-margin-left: auto;
+  width: 100%;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .caption {
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 2rem;
-font-weight: 700;
-color: var(--app-primary);
-padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--app-primary);
+  padding-bottom: 1rem;
 }
 
 
@@ -60,35 +57,35 @@ padding-bottom: 1rem;
 
 /* todo container */
 .todo_container {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background: var(--app-white);
-border-radius: 15px;
-width: 100%;
-overflow-x: hidden;
-padding: 20px;
-margin-left: auto;
-margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--app-white);
+  border-radius: 15px;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .tasks_status_cancel_btn {
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-align-items: center;
-background: var(--app-white);
-padding: 1rem 0rem;
-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background: var(--app-white);
+  padding: 1rem 0rem;
+  gap: 3rem;
 }
 
 
 .tasks_status_cancel_btn p {
-font-size: 20px;
-font-weight: 700;
-color: var(--app-primary);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--app-primary);
 }
 
 
@@ -96,25 +93,25 @@ color: var(--app-primary);
 .todo_wrapper {
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 23rem;
   overflow-y: scroll;
 }
 
 .todo_wrapper .tasks {
-padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 
 .todo_wrapper .tasks .tasks_items {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background: var(--app-white);
-padding: 10px;
-border-radius: 8px;
-box-shadow: var(--app-shadow);
-margin: 5px;
-border: 2px solid var(--app-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--app-white);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: var(--app-shadow);
+  margin: 5px;
+  border: 2px solid var(--app-white);
 }
 
 
@@ -124,14 +121,10 @@ border: 2px solid var(--app-white);
 
 .custom-progress-bar {
   width: 100%;
-  height: 15px;
+  height: 20px;
   border: 1px solid #ccc;
   position: relative;
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
 
 .progress-bar {
@@ -185,40 +178,41 @@ border: 2px solid var(--app-white);
 
 /* RESPONSIVENESS */
 @media (min-width: 640px) {
-.container {
-  max-width: 100%;
-}
+  .container {
+    max-width: 100%;
+  }
 
-.todo_container {
-  width: 100%;
-}
+  .todo_container {
+    width: 100%;
+  }
 }
 
 
 @media (min-width: 768px) {
-.container {
-  max-width: 768px;
-}
+  .container {
+    max-width: 768px;
+  }
 
-.todo_container {
-  width: 35rem;
-}
+  .todo_container {
+    width: 35rem;
+  }
 }
 
 
 @media (min-width: 1204px) {
-.container {
-  max-width: 1204px;
-}
-.todo_container {
-  width: 35rem;
-}
+  .container {
+    max-width: 1204px;
+  }
 
-.todo_wrapper {
-  height: 28rem;
-}
+  .todo_container {
+    width: 35rem;
+  }
 
-.tasks_status_cancel_btn {
-  flex-direction: row;
-}
+  .todo_wrapper {
+    height: 28rem;
+  }
+
+  .tasks_status_cancel_btn {
+    flex-direction: row;
+  }
 }
